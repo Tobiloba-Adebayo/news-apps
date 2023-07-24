@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 0.3s all ease-in-out; 
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.navbar nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbar nav ul li a{
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #000;
+}
+
+.navbar nav ul li a:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.container-grid{
+    display: flex;
+    gap: 30px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 70px;
+}
+
+.container-grid >*{
+    /* border: 2px solid red; */
+    height: 70vh;
+}
+
+.container-grid >:nth-child(1){
+    width: 72%;
+}
+
+.container-grid >:nth-child(2){
+    width: 27%;
+}
+
+.container-grid >:nth-child(1) .image{
+    width: 100%;
+    height: 40vh;
+    background: url(image-web-3-desktop.jpg);
+    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.container-grid .text-content{
+    /* border: 2px solid #000; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding-top: 10px;
+}
+
+
+
+.container-grid .text-content div:nth-child(1) h2{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.text-content >:nth-child(2) p{
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.text-content >:nth-child(2) button{
+    padding: 16px 12px;
+    width: 150px;
+    font-size: 14px;
+    background: hsl(240, 100%, 5%);
+    color: #fff;
+    border: none;
+    outline: none;
+    word-break: 5px;
+    text-transform: uppercase;
+}
+
+
+.container-grid >:nth-child(2){
+    background: hsl(240, 100%, 5%);
+}
+
+.container-grid >:nth-child(2) .col1{
+    padding: 30px 12px;
+    border-bottom: 2px solid #fff;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.container-grid >:nth-child(2) .col1 h3, .col2 h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: hsl(35, 77%, 62%);
+}
+.container-grid >:nth-child(2) .col1 h4, .col2 h4, .col3 h4{
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.container-grid >:nth-child(2) .col1 p, .col2 p, .col3 p{
+    line-height: 25px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.container-grid >:nth-child(2) .col2{
+    padding: 12px 12px;
+    border-bottom: 1px solid #fff;
+    width: 90%;
+    margin: auto;
+
+}
+
+.container-grid >:nth-child(2) .col3{
+    padding: 24px 12px;
+    /* border-bottom: 1px solid #fff; */
+    width: 90%;
+    margin: auto;
+   margin-top: 20px;
+}
+
+
+.foot-grid{
+    width: 85%;
+    margin: auto;
+    /* border: 2px solid #000; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 50px;
+}
+
+.foot-grid >*{
+    /* border: 2px solid #000; */
+    height: 20vh;
+    display: flex;
+    gap: 10px;
+}
+
+.foot-grid .content1 .image-grid1{
+    background: url(image-retro-pcs.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+
+.foot-grid .content1 .image-grid2{
+    background: url(image-top-laptops.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+.foot-grid .content1 .image-grid3{
+    background: url(image-gaming-growth.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+
+.foot-grid .content1 .textBox{
+    /* background: blueviolet; */
+    width: 70%;
+    padding: 8px 12px;
+}
+
+.foot-grid .content1 .textBox label{
+    word-spacing: 80px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #b3adad;
+}
+
+.foot-grid .content1 .textBox h3{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.foot-grid .content1 .textBox p{
+    font-weight: 300;
+    line-height: 25px;
+}
+
+/* Hamburger Section */
+
+.container #burger{
+    /* background: #fff; */
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    top: 35px;
+    display: none;
+    right: 0;
+}
+
+.container #burger >*{
+    width: 35px;
+    height: 5px;
+    background: #000;
+    margin-bottom: 5px;
+}
+
+
+
+/* Ends here */
+
+
+
+
+@media only screen and (max-width:1300px){
+    .container .navbar{
+        width: 90%;
+        margin: auto;
+    }
+
+    .container .container-grid{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .foot-grid{
+        width: 90%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .container .navbar{
+        width: 98%;
+        margin: auto;
+
+    }
+
+    .container .container-grid{
+        width: 98%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .foot-grid{
+        width: 98%;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width:1140px){
+    .container .navbar{
+      width: 95%;
+      margin: auto;
+
+    }
+
+    .container .container-grid{
+        width: 95%;
+        gap: 5px;
+    }
+
+    .container .container-grid .image{
+       width: 95%;
+    }
+
+    .container .container-grid .text-content{
+        width: 95%;
+    }
+
+    .container .container-grid>:nth-child(2){
+        width: 40%;
+    }
+    .foot-grid{
+        width: 95%;
+        gap: 5px;
+    }
+}
+
+
+@media only screen and (max-width:1103px){
+    .container .navbar{
+      width: 98%;
+      margin: auto;
+
+    }
+
+    .container .container-grid{
+        width: 98%;
+        gap: 5px;
+    }
+
+    .container .container-grid .image{
+       width: 98%;
+    }
+
+    .container .container-grid .text-content{
+        width: 98%;
+    }
+
+    .container .container-grid>:nth-child(2){
+        width: 40%;
+    }
+
+    .foot-grid{
+        width: 98%;
+        gap: 5px;
+    }
+}
+
+@media only screen and (max-width: 1090px){
+
+    .container .navbar{
+        width: 90%;
+        margin: auto;
+    }
+
+   .container .container-grid{
+        display: block;
+    }
+
+   .container .container-grid > .grid{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+
+    
+    .container .container-grid>*:nth-child(2){
+        margin-left: none
+        ;
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 25vh;
+        padding-left: 30px;
+    }
+
+ 
+    .container-grid >:nth-child(2) .col1{
+        padding: 30px 12px;
+        /* border: 2px solid red; */
+        border-right: 2px solid #fff;
+        border-bottom: none;
+        margin: 0%;
+    }
+
+    .container-grid >:nth-child(2) .col2{
+        padding: 30px 12px;
+        /* border: 2px solid red; */
+        margin: 0%;
+        border-bottom: none;
+        border-right: 2px solid #fff;
+    }
+
+    .container-grid >:nth-child(2) .col3{
+        padding: 30px 12px;
+        margin: 0%;
+        /* border: 2px solid red; */
+    }
+
+    .foot-grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width:966px){
+    .container .navbar{
+        width: 95%;
+    }
+
+    .container .container-grid{
+        width: 95%;
+        /* border: 2px solid #000; */
+    }
+
+    .container .container-grid .grid{
+        width: 100%;
+    }
+
+    .container .container-grid .grid .image{
+        width: 100%;
+    }
+
+    .container .container-grid>*:nth-child(2){
+        width: 100%;
+        height: 30vh;
+    }
+
+
+    .foot-grid{
+        width: 95%;
+        /* border: 2px solid #000; */
+    }
+}
+
+
+@media only screen and (max-width:886px){
+
+    .container .navbar nav ul li{
+        display: block;
+        padding: 1em 0;
+    }
+
+    .container #burger{
+        display: block;
+    }
+
+     .container .navbar nav ul {
+       padding: 60px 60px;
+        height: 100vh;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40%;
+        transform: translateX(100%);
+     }
+
+   .container .navbar nav ul.active{
+        transform: translateX(0px);
+     }
+
+     .container #burger.active{
+        transform: translateX(-250px);
+        z-index: 3;
+     }
+
+
+}
+
+@media only screen and (max-width: 650px){
+     .container .container-grid>*:nth-child(2){
+      grid-template-columns: repeat(1, 1fr);
+      height: 60vh;
+    }
+
+    .container .container-grid>*:nth-child(2)>*{
+        border: none;
+    }
+
+    .container .container-grid .text-content>*:nth-child(1){
+        padding-top: 50px;
+        padding-left: 10px;
+    }
+
+    .container .container-grid .text-content>*:nth-child(1) h2{
+        font-size: 35px;
+    }
+}
+
+
+@media only screen and (max-width:550px){
+    .container #burger.active{
+        transform: translateX(-170px);
+        z-index: 3;
+     }
+}
+
+
+@media only screen and (max-width: 500px){
+      .container .container-grid .text-content>*:nth-child(1) h2{
+        font-size: 39px;
+        width: 70%;
+    }
+
+    .container .container-grid .text-content>*:nth-child(1){
+        width: 100%;
+        /* border: 2px solid #000; */
+    }
+
+    .container .container-grid .text-content>*:nth-child(2) button{
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        background: orangered;
+        color: #fff;
+    }
+
+    .container .container-grid .text-content{
+        grid-template-columns: repeat(1, 1fr);
+        /* border: 2px solid #000; */
+    }
+
+    .container .container-grid>*:nth-child(2){
+        margin-top: 250px;
+        height: 500px;
+    }
+
+    .container .container-grid .text-content>*:nth-child(3) p{
+        font-size: 10px;
+    }
+
+    .container .container-grid .grid .image{
+        background: url(image-web-3-mobile.jpg);
+    }
+
+    .container #burger.active{
+        transform: translateX(-150px);
+        z-index: 3;
+     }
+}
+
+
+
